@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer by Docker prune
+Documentation=https://github.com/1thenikita/docker-prune-systemctl-timer
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

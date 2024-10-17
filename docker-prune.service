@@ -1,0 +1,5 @@
+[Unit]
+Description=Clear space by docker prune command
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sudo /usr/bin/docker system prune -a -f
